@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#f4f0e8">
+<meta name="description" content="AUREA Hotel Boutique. Um conceito de hospitalidade sofisticada, experiências exclusivas e conexão com a natureza. Projeto demonstrativo.">
+<title>AUREA | Hotel Boutique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+
+<!-- HEADER -->
+<header class="header" id="header">
+<div class="container header-inner">
+<a href="#inicio" class="brand" aria-label="AUREA Hotel Boutique, início">
+<span class="brand-name">AUREA</span>
+<span class="brand-subtitle">HOTEL BOUTIQUE</span>
+</a>
+
+<nav class="navigation" id="navigation" aria-label="Navegação principal">
+<a href="#inicio" class="nav-link active">Início</a>
+<a href="#conceito" class="nav-link">O hotel</a>
+<a href="#suites" class="nav-link">Suítes</a>
+<a href="#experiencias" class="nav-link">Experiências</a>
+<a href="#galeria" class="nav-link">Galeria</a>
+<a href="#reservas" class="nav-reserve">Reservar estadia</a>
+</nav>
+
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-controls="navigation" aria-expanded="false">
+<span></span>
+<span></span>
+</button>
+</div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+<div class="hero-background">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2000&q=90" alt="Suíte sofisticada de hotel com iluminação acolhedora" fetchpriority="high">
+</div>
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+<span class="eyebrow eyebrow-light hero-eyebrow">UMA EXPERIÊNCIA ALÉM DA HOSPEDAGEM</span>
+<h1>O luxo de<br><em>sentir-se presente.</em></h1>
+<p>Um refúgio imaginado para quem valoriza o tempo, a natureza e a beleza dos pequenos detalhes.</p>
+<div class="hero-actions">
+<a href="#suites" class="button button-light">Explore nossas suítes</a>
+<a href="#conceito" class="hero-secondary">Descubra o AUREA</a>
+</div>
+</div>
+
+<div class="hero-bottom">
+<div class="container hero-bottom-inner">
+<span>HOSPITALIDADE COM PROPÓSITO</span>
+<span>01 / 05</span>
+</div>
+</div>
+</section>
+
+<!-- BOOKING BAR -->
+<section class="booking-bar" aria-label="Simulação de reserva">
+<div class="container">
+<form id="quickBookingForm" class="booking-form" novalidate>
+<div class="booking-field">
+<label for="quickCheckin">CHECK-IN</label>
+<input type="date" id="quickCheckin" required>
+</div>
+<div class="booking-field">
+<label for="quickCheckout">CHECK-OUT</label>
+<input type="date" id="quickCheckout" required>
+</div>
+<div class="booking-field">
+<label for="quickGuests">HÓSPEDES</label>
+<select id="quickGuests">
+<option value="1">1 hóspede</option>
+<option value="2" selected>2 hóspedes</option>
+<option value="3">3 hóspedes</option>
+<option value="4">4 hóspedes</option>
+</select>
+</div>
+<button type="submit" class="button button-dark">Consultar estadia</button>
+</form>
+<p id="quickBookingFeedback" class="booking-feedback" role="status" aria-live="polite"></p>
+</div>
+</section>
+
+<!-- CONCEITO -->
+<section class="concept section-space" id="conceito">
+<div class="container">
+<div class="concept-intro reveal">
+<span class="eyebrow">01 / NOSSA ESSÊNCIA</span>
+<h2 class="display-title">Alguns lugares<br>nos fazem <em>desacelerar.</em></h2>
+<p>O AUREA nasce como um conceito de hospitalidade que celebra a tranquilidade, a arquitetura natural e a liberdade de viver cada momento.</p>
+</div>
+
+<div class="concept-grid">
+<div class="concept-image concept-image-main reveal">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Arquitetura contemporânea com materiais naturais" loading="lazy">
+</div>
+<div class="concept-story reveal">
+<span class="eyebrow">A ARTE DE RECEBER</span>
+<h3>Uma nova maneira<br>de viver o tempo.</h3>
+<p>Mais do que um destino, imaginamos um espaço onde cada ambiente convida à contemplação. Texturas naturais, luz suave e uma atmosfera de conforto definem nossa identidade.</p>
+<p>Este projeto apresenta uma experiência digital para um hotel boutique fictício, com foco em arquitetura, gastronomia, descanso e bem-estar.</p>
+<a href="#experiencias" class="text-link">Conheça as experiências</a>
+</div>
+<div class="concept-image concept-image-secondary reveal">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Interior contemporâneo com tons neutros e materiais naturais" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- SUÍTES -->
+<section class="suites section-space" id="suites">
+<div class="container">
+<div class="section-heading reveal">
+<div>
+<span class="eyebrow">02 / ACOMODAÇÕES</span>
+<h2 class="display-title">Seu espaço de<br><em>tranquilidade.</em></h2>
+</div>
+<p>Ambientes cuidadosamente idealizados para oferecer conforto, privacidade e uma conexão especial com o entorno.</p>
+</div>
+
+<div class="suite-filters" aria-label="Filtrar suítes">
+<button type="button" class="filter-button active" data-filter="todas" aria-pressed="true">Todas as suítes</button>
+<button type="button" class="filter-button" data-filter="essencial" aria-pressed="false">Essenciais</button>
+<button type="button" class="filter-button" data-filter="premium" aria-pressed="false">Premium</button>
+<button type="button" class="filter-button" data-filter="exclusiva" aria-pressed="false">Exclusivas</button>
+</div>
+
+<div class="suites-grid">
+<article class="suite-card reveal" data-category="essencial">
+<button type="button" class="suite-open" data-suite="jardim" aria-label="Conhecer Suíte Jardim">
+<div class="suite-image">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85" alt="Quarto elegante de hotel com cama ampla e iluminação acolhedora" loading="lazy">
+<span class="suite-tag">ESSENCIAL</span>
+</div>
+<div class="suite-information">
+<div><span class="suite-number">ACOMODAÇÃO 01</span><h3>Suíte Jardim</h3></div>
+<p>Conforto, simplicidade e serenidade em um ambiente acolhedor.</p>
+<div class="suite-meta"><span>2 HÓSPEDES</span><span>QUARTO CONCEITUAL</span></div>
+</div>
+</button>
+</article>
+
+<article class="suite-card reveal" data-category="premium">
+<button type="button" class="suite-open" data-suite="horizonte" aria-label="Conhecer Suíte Horizonte">
+<div class="suite-image">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85" alt="Quarto premium de hotel com decoração contemporânea" loading="lazy">
+<span class="suite-tag">PREMIUM</span>
+</div>
+<div class="suite-information">
+<div><span class="suite-number">ACOMODAÇÃO 02</span><h3>Suíte Horizonte</h3></div>
+<p>Amplitude e elegância para uma experiência de descanso especial.</p>
+<div class="suite-meta"><span>2 HÓSPEDES</span><span>QUARTO CONCEITUAL</span></div>
+</div>
+</button>
+</article>
+
+<article class="suite-card reveal" data-category="exclusiva">
+<button type="button" class="suite-open" data-suite="aurora" aria-label="Conhecer Suíte Aurora">
+<div class="suite-image">
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85" alt="Acomodação de hotel com interior sofisticado" loading="lazy">
+<span class="suite-tag">EXCLUSIVA</span>
+</div>
+<div class="suite-information">
+<div><span class="suite-number">ACOMODAÇÃO 03</span><h3>Suíte Aurora</h3></div>
+<p>Uma proposta de hospedagem com atenção especial aos detalhes.</p>
+<div class="suite-meta"><span>2 HÓSPEDES</span><span>QUARTO CONCEITUAL</span></div>
+</div>
+</button>
+</article>
+
+<article class="suite-card reveal" data-category="premium">
+<button type="button" class="suite-open" data-suite="refugio" aria-label="Conhecer Suíte Refúgio">
+<div class="suite-image">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=85" alt="Quarto aconchegante com decoração natural e tons suaves" loading="lazy">
+<span class="suite-tag">PREMIUM</span>
+</div>
+<div class="suite-information">
+<div><span class="suite-number">ACOMODAÇÃO 04</span><h3>Suíte Refúgio</h3></div>
+<p>Um ambiente reservado para relaxar e aproveitar cada instante.</p>
+<div class="suite-meta"><span>2 HÓSPEDES</span><span>QUARTO CONCEITUAL</span></div>
+</div>
+</button>
+</article>
+</div>
+
+<p class="section-disclaimer">Acomodações ilustrativas. As imagens são referências independentes e não representam quartos disponíveis para reserva.</p>
+</div>
+</section>
+
+<!-- EXPERIÊNCIAS -->
+<section class="experiences section-space" id="experiencias">
+<div class="container">
+<div class="section-heading reveal">
+<div>
+<span class="eyebrow">03 / EXPERIÊNCIAS</span>
+<h2 class="display-title">O extraordinário<br>está nos <em>detalhes.</em></h2>
+</div>
+<p>Uma coleção de experiências imaginadas para transformar momentos simples em memórias especiais.</p>
+</div>
+
+<div class="experiences-grid">
+<article class="experience-card experience-large reveal">
+<div class="experience-image">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1300&q=85" alt="Ambiente de spa e bem-estar com atmosfera relaxante" loading="lazy">
+</div>
+<div class="experience-info">
+<span>01 / BEM-ESTAR</span>
+<h3>O tempo de cuidar de si.</h3>
+<p>Um conceito de spa dedicado ao descanso e à reconexão.</p>
+</div>
+</article>
+
+<article class="experience-card reveal">
+<div class="experience-image">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85" alt="Restaurante elegante com mesas preparadas para jantar" loading="lazy">
+</div>
+<div class="experience-info">
+<span>02 / GASTRONOMIA</span>
+<h3>Sabores que permanecem.</h3>
+<p>Uma experiência gastronômica inspirada em ingredientes e encontros.</p>
+</div>
+</article>
+
+<article class="experience-card reveal">
+<div class="experience-image">
+<img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1100&q=85" alt="Piscina de hotel cercada por vegetação" loading="lazy">
+</div>
+<div class="experience-info">
+<span>03 / LAZER</span>
+<h3>Momentos sem pressa.</h3>
+<p>Espaços idealizados para contemplar, relaxar e aproveitar.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+<div class="manifesto-background">
+<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=2000&q=85" alt="Área de lazer de hotel com piscina e arquitetura contemporânea" loading="lazy">
+</div>
+<div class="manifesto-overlay"></div>
+<div class="container manifesto-content reveal">
+<span class="eyebrow eyebrow-light">NOSSA FILOSOFIA</span>
+<h2>Há uma beleza<br>especial em <em>não ter pressa.</em></h2>
+<p>DESCUBRA O VALOR DE ESTAR PRESENTE.</p>
+</div>
+</section>
+
+<!-- GALERIA -->
+<section class="gallery-section section-space" id="galeria">
+<div class="container">
+<div class="section-heading reveal">
+<div>
+<span class="eyebrow">04 / GALERIA</span>
+<h2 class="display-title">Uma atmosfera<br><em>para recordar.</em></h2>
+</div>
+<p>Explore as referências visuais que inspiram a identidade do AUREA.</p>
+</div>
+
+<div class="gallery-grid">
+<button class="gallery-item gallery-featured reveal" type="button" data-gallery="0" aria-label="Ampliar fotografia de piscina">
+<img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85" alt="Piscina de hotel cercada por vegetação" loading="lazy">
+<span>AMBIENTES / 01</span>
+</button>
+
+<button class="gallery-item reveal" type="button" data-gallery="1" aria-label="Ampliar fotografia de suíte">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1100&q=85" alt="Suíte elegante de hotel" loading="lazy">
+<span>AMBIENTES / 02</span>
+</button>
+
+<button class="gallery-item reveal" type="button" data-gallery="2" aria-label="Ampliar fotografia de restaurante">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85" alt="Restaurante com iluminação sofisticada" loading="lazy">
+<span>AMBIENTES / 03</span>
+</button>
+
+<button class="gallery-item reveal" type="button" data-gallery="3" aria-label="Ampliar fotografia de quarto">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1100&q=85" alt="Quarto de hotel com tons naturais" loading="lazy">
+<span>AMBIENTES / 04</span>
+</button>
+</div>
+<p class="section-disclaimer">Galeria de referências fotográficas. Não representa um empreendimento real.</p>
+</div>
+</section>
+
+<!-- PROCESSO -->
+<section class="journey section-space">
+<div class="container journey-grid">
+<div class="journey-intro reveal">
+<span class="eyebrow">05 / HOSPITALIDADE</span>
+<h2 class="display-title">Uma jornada<br><em>memorável.</em></h2>
+<p>Uma experiência idealizada para valorizar cada etapa da estadia.</p>
+</div>
+<div class="journey-steps">
+<article class="journey-step reveal">
+<span>01</span>
+<div><h3>Descubra</h3><p>Explore os ambientes, as acomodações e as experiências do conceito AUREA.</p></div>
+</article>
+<article class="journey-step reveal">
+<span>02</span>
+<div><h3>Planeje</h3><p>Experimente uma interface simples para escolher datas e preferências.</p></div>
+</article>
+<article class="journey-step reveal">
+<span>03</span>
+<div><h3>Desacelere</h3><p>Imagine uma estadia dedicada ao conforto e ao tempo de qualidade.</p></div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section-space" id="perguntas">
+<div class="container faq-grid">
+<div class="faq-intro reveal">
+<span class="eyebrow">INFORMAÇÕES</span>
+<h2 class="display-title">Perguntas<br><em>frequentes.</em></h2>
+<p>Saiba mais sobre a experiência demonstrativa do AUREA.</p>
+</div>
+<div class="faq-list">
+<details class="faq-item reveal">
+<summary>O AUREA é um hotel real?</summary>
+<p>Não. O AUREA é um projeto fictício criado para demonstrar o desenvolvimento de um site premium para o setor de hotelaria.</p>
+</details>
+<details class="faq-item reveal">
+<summary>É possível realizar uma reserva?</summary>
+<p>Não. Os formulários são interativos apenas para demonstração. Não existe disponibilidade real, cobrança ou confirmação de hospedagem.</p>
+</details>
+<details class="faq-item reveal">
+<summary>As fotografias são do hotel?</summary>
+<p>Não. As imagens são referências visuais independentes utilizadas para ilustrar o conceito do projeto.</p>
+</details>
+<details class="faq-item reveal">
+<summary>Os dados preenchidos são armazenados?</summary>
+<p>Não. Os formulários funcionam localmente no navegador e não enviam nem armazenam os dados informados.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- RESERVAS -->
+<section class="reservation section-space" id="reservas">
+<div class="container reservation-grid">
+<div class="reservation-copy reveal">
+<span class="eyebrow eyebrow-light">SUA PRÓXIMA EXPERIÊNCIA</span>
+<h2>Imagine sua<br>próxima <em>estadia.</em></h2>
+<p>Experimente a interface de solicitação de reserva. Nenhuma hospedagem será reservada.</p>
+<div class="reservation-note">
+<span>AUREA / PROJETO CONCEITUAL</span>
+<p>Este hotel é fictício. Não há atendimento, pagamento ou reserva real.</p>
+</div>
+</div>
+
+<div class="reservation-card reveal">
+<span class="eyebrow">SIMULAÇÃO DE RESERVA</span>
+<h3>Planeje sua estadia.</h3>
+<p>Selecione datas e uma acomodação para testar a experiência.</p>
+
+<form id="reservationForm" novalidate>
+<div class="form-row">
+<div class="form-field">
+<label for="checkin">Check-in</label>
+<input type="date" id="checkin" required>
+</div>
+<div class="form-field">
+<label for="checkout">Check-out</label>
+<input type="date" id="checkout" required>
+</div>
+</div>
+
+<div class="form-field">
+<label for="suiteSelect">Acomodação</label>
+<select id="suiteSelect" required>
+<option value="">Selecione uma suíte</option>
+<option value="jardim">Suíte Jardim</option>
+<option value="horizonte">Suíte Horizonte</option>
+<option value="aurora">Suíte Aurora</option>
+<option value="refugio">Suíte Refúgio</option>
+</select>
+</div>
+
+<div class="form-field">
+<label for="guests">Hóspedes</label>
+<select id="guests">
+<option value="1">1 hóspede</option>
+<option value="2" selected>2 hóspedes</option>
+</select>
+</div>
+
+<button type="submit" class="button button-dark form-submit">Simular reserva</button>
+<p class="form-disclaimer">Demonstração sem envio ou armazenamento de dados. Não há disponibilidade real.</p>
+<p id="reservationFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-top">
+<div>
+<a href="#inicio" class="footer-brand">AUREA</a>
+<span class="footer-brand-subtitle">HOTEL BOUTIQUE</span>
+</div>
+<p>Um conceito de hospitalidade onde arquitetura, natureza e tranquilidade se encontram.</p>
+<div class="footer-links">
+<a href="#conceito">O hotel</a>
+<a href="#suites">Suítes</a>
+<a href="#experiencias">Experiências</a>
+<a href="#reservas">Reservas demonstrativas</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="currentYear">2026</span> AUREA. PROJETO CONCEITUAL.</span>
+<span>HOTEL FICTÍCIO — SEM RESERVAS REAIS</span>
+<a href="#inicio">Voltar ao início</a>
+</div>
+</div>
+</footer>
+
+<!-- MODAL DE SUÍTE -->
+<div class="suite-modal" id="suiteModal" aria-hidden="true">
+<div class="modal-backdrop" data-close-suite></div>
+<section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+<button class="modal-close" id="modalClose" type="button">Fechar</button>
+<div class="modal-gallery">
+<div class="modal-main-image">
+<img id="modalImage" src="" alt="">
+<span id="modalCounter">01 / 03</span>
+</div>
+<div class="modal-thumbnails" id="modalThumbnails"></div>
+</div>
+<div class="modal-content">
+<span class="eyebrow" id="modalCategory">ACOMODAÇÃO</span>
+<h2 id="modalTitle">Suíte</h2>
+<p id="modalDescription"></p>
+<div class="modal-details">
+<div><span>CAPACIDADE</span><strong id="modalCapacity">2 hóspedes</strong></div>
+<div><span>CATEGORIA</span><strong id="modalType">Premium</strong></div>
+<div><span>STATUS</span><strong>Conceito demonstrativo</strong></div>
+</div>
+<a href="#reservas" class="button button-dark" id="modalReserve">Simular reserva</a>
+<p class="modal-disclaimer">Imagens ilustrativas. Acomodação fictícia e indisponível para reservas reais.</p>
+</div>
+</section>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+<div class="lightbox-backdrop" data-close-lightbox></div>
+<div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Galeria de fotografias" tabindex="-1">
+<button type="button" class="lightbox-close" id="lightboxClose">Fechar</button>
+<img id="lightboxImage" src="" alt="">
+<div class="lightbox-controls">
+<button type="button" id="lightboxPrevious">Anterior</button>
+<span id="lightboxCounter">01 / 04</span>
+<button type="button" id="lightboxNext">Próxima</button>
+</div>
+</div>
+</div>
+
+</body>
+</html>
