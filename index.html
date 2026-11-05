@@ -85,11 +85,9 @@
 <select id="quickGuests">
 <option value="1">1 hóspede</option>
 <option value="2" selected>2 hóspedes</option>
-<option value="3">3 hóspedes</option>
-<option value="4">4 hóspedes</option>
 </select>
 </div>
-<button type="submit" class="button button-dark">Consultar estadia</button>
+<button type="submit" disabled data-demo-submit class="button button-dark">Consultar estadia</button>
 </form>
 <p id="quickBookingFeedback" class="booking-feedback" role="status" aria-live="polite"></p>
 </div>
@@ -402,7 +400,7 @@
 </select>
 </div>
 
-<button type="submit" class="button button-dark form-submit">Simular reserva</button>
+<button type="submit" disabled data-demo-submit class="button button-dark form-submit">Simular reserva</button>
 <p class="form-disclaimer">Demonstração sem envio ou armazenamento de dados. Não há disponibilidade real.</p>
 <p id="reservationFeedback" class="form-feedback" role="status" aria-live="polite"></p>
 </form>
@@ -443,7 +441,7 @@
 <button class="modal-close" id="modalClose" type="button">Fechar</button>
 <div class="modal-gallery">
 <div class="modal-main-image">
-<img id="modalImage" src="" alt="">
+<img id="modalImage" alt="">
 <span id="modalCounter">01 / 03</span>
 </div>
 <div class="modal-thumbnails" id="modalThumbnails"></div>
@@ -468,7 +466,7 @@
 <div class="lightbox-backdrop" data-close-lightbox></div>
 <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Galeria de fotografias" tabindex="-1">
 <button type="button" class="lightbox-close" id="lightboxClose">Fechar</button>
-<img id="lightboxImage" src="" alt="">
+<img id="lightboxImage" alt="">
 <div class="lightbox-controls">
 <button type="button" id="lightboxPrevious">Anterior</button>
 <span id="lightboxCounter">01 / 04</span>

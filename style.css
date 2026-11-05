@@ -366,3 +366,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
 .js-ready .reveal{opacity:1;transform:none}
 }
+
+/* O menu acompanha a cor do cabeçalho em todos os estados. */
+.menu-toggle{color:inherit}

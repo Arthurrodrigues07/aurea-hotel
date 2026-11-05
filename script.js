@@ -600,4 +600,6 @@ console.warn("Imagem indisponível:",img.currentSrc||img.src);
 });
 });
 
+// Ativa submissões somente após instalar os controles demonstrativos.
+document.querySelectorAll("[data-demo-submit]").forEach(button=>{button.disabled=false;});
 });
